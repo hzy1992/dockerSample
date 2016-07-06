@@ -3,5 +3,5 @@ WORKDIR /usr/src/app
 RUN mvn install
 RUN cp -rf target/* /usr/local/tomcat/webapps/
 RUN rm -rf *
-RUN sh /usr/local/tomcat/bin/catalina.sh start
-RUN tail -f /usr/local/tomcat/logs/catalina.out
+CMD ["sh","/usr/local/tomcat/bin/catalina.sh","start","|","tail","-f","/usr/local/tomcat/logs/catalina.out"]
+EXPORT 8080
