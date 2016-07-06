@@ -4,4 +4,4 @@ RUN mvn install
 RUN cp -rf target/* /usr/local/tomcat/webapps/
 RUN rm -rf *
 CMD ["sh","/usr/local/tomcat/bin/catalina.sh","start","|","tail","-f","/usr/local/tomcat/logs/catalina.out"]
-EXPORT 8080
+EXPOSE 8080
