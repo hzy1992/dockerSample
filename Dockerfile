@@ -1,4 +1,5 @@
 FROM hezhiyong1992/mvn-tomcat
+RUN ls
 RUN mvn install
 RUN cp target/* /usr/local/tomcat/webapps/
 RUN rm -rf .
