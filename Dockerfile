@@ -1,4 +1,4 @@
-FROM daocloud.io/hezhiyong1992/mvn-tomcat
+FROM hezhiyong1992/mvn-tomcat
 RUN mvn install
 RUN cp target/* /usr/local/tomcat/webapps/
 RUN rm -rf .
