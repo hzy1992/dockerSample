@@ -11,7 +11,7 @@
   </properties>
   
   <dependencies>
-	<dependency>
+ 	<dependency>
 	    <groupId>javax.servlet</groupId>
 	    <artifactId>javax.servlet-api</artifactId>
 	    <version>3.0.1</version>
@@ -26,11 +26,12 @@
             <configuration>
                 <failOnMissingWebXml>false</failOnMissingWebXml>
              	<warName>${project.artifactId}</warName>
-             	<warSourceDirectory>
+				<warSourceDirectory>
 					WebContent
 				</warSourceDirectory>
             </configuration>
         </plugin>
+         
     </plugins>
 </build>
 </project>
