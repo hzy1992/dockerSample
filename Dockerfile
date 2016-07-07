@@ -8,7 +8,7 @@ RUN mkdir -p /usr/src/app
 add . /usr/src/app
 WORKDIR /usr/src/app
 RUN mvn install
-RUN cp target/*.war /usr/jetty/webapps/
+RUN cp target/*.war /usr/jetty/webapps
 WORKDIR /usr/src
 RUN rm -rf *
 WORKDIR /usr/jetty
