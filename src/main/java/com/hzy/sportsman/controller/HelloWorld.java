@@ -13,7 +13,7 @@ public class HelloWorld extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
-		arg1.getWriter().write("hello world");
+		arg1.getWriter().write("hello world"+arg0.getParameter("name").equals("hzy"));
 	}
 
 	
